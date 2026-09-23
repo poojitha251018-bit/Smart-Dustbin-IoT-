@@ -1,0 +1,26 @@
+Smart Dustbin 
+
+**Good morning everyone.**
+
+Our project is **“Smart Dustbin using ESP32.”**
+
+The main purpose of this project is to make a dustbin **automatic and touch-free**. In a normal dustbin, we need to open the lid manually. In our project, the lid opens automatically when a person brings their hand or an object near the dustbin.
+
+The main components used in this project are **ESP32, HC-SR04 ultrasonic sensor, and servo motor**.
+
+The **HC-SR04 ultrasonic sensor** is used to detect the distance of an object. It sends ultrasonic waves and receives the reflected waves. From this, the ESP32 calculates the distance.
+
+The **ESP32** is the main controller of the project. It receives the distance information from the ultrasonic sensor. If the object is within the programmed distance, the ESP32 sends a signal to the servo motor.
+
+The **servo motor** is connected to the dustbin lid. When the ESP32 detects a nearby object, the servo motor rotates and **opens the lid**. After the object moves away, the servo motor rotates back and **closes the lid**.
+
+This project also uses the **Wi-Fi capability of ESP32**. The ESP32 can send the sensor data and lid status to **ThingSpeak**, which is an IoT cloud platform. The data can then be displayed using graphs.
+
+The complete project is first developed and tested using **Wokwi simulation**. After testing, the project can be documented in **GitHub** along with the program code, circuit diagram, block diagram, screenshots, and project report.
+
+
+**Object detected → Ultrasonic sensor measures distance → ESP32 processes the data → Servo motor opens the lid → Data is sent through Wi-Fi → ThingSpeak displays the data.** 
+
+This project demonstrates how **sensors, a microcontroller, an actuator, Wi-Fi, and cloud technology** can be combined to create a simple IoT application. It can help make waste disposal more **convenient and touch-free**.
+
+**Thank you.**
